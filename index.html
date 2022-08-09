@@ -8,6 +8,7 @@
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <!-- animate css -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <style>
     .myLogo {
@@ -37,14 +38,14 @@
       name: 'JasonJohn’s home',
       formatUpdated: '{MM}/{DD} {HH}:{mm}', // 配置日期格式
       repo: 'https://github.com/Gacent',
+      progress: {
+        position: "top",
+        color: "var(--theme-color,#42b983)",
+        height: "3px",
+      },
       search: {
         maxAge: 86400000, // 过期时间，单位毫秒，默认一天
-        placeholder: 'Type to search',
-        // 支持本地化
-        placeholder: {
-          '/zh-cn/': '搜索',
-          '/': 'Type to search'
-        },
+        placeholder: '搜索',
         noData: 'No Results!',
         // 搜索标题的最大层级, 1 - 6
         depth: 2,
@@ -69,6 +70,13 @@
   <!-- 分页 -->
   <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
 
+  <!-- PDFObject.js is a required dependency of this plugin -->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/pdfobject/2.1.1/pdfobject.min.js"></script>
+  <!-- or use this if you are not hosting the file yourself -->
+  <script src="//unpkg.com/docsify-pdf-embed-plugin/src/docsify-pdf-embed.js"></script>
+
+  <!-- 进度条插件 -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify-progress@latest/dist/progress.min.js"></script>
   <!-- vue3 -->
   <!-- Production -->
   <script src="//cdn.jsdelivr.net/npm/vue@3/dist/vue.global.prod.js"></script>

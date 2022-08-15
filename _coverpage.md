@@ -4,5 +4,9 @@
 
 > do more , do better
 
-[GitHub](https://github.com/Gacent)
-[Get Started](/home/guide.md)
+[个人文档](/home/doc/guide.md)
+[组件库](/home/component/guide.md)
+
+<!-- 背景图片 -->
+
+![](/images/myLogo.jpg)
